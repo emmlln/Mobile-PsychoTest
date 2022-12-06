@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PsychoTestApp.Views.EndTestInfo">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Text="Тест пройден" HorizontalTextAlignment="Center" TextColor="Black" FontSize="20" Margin="0,30,0,20">
+                </Label>
+
+                <Label Grid.Row="1" Text="Результаты тестирования сохранены!" HorizontalTextAlignment="Center" TextColor="Black" FontSize="16" Margin="0,0,0,20">
+                </Label>
+
+                <Image Grid.Row="2" Source="konfetti.png" Margin="50,50,30,50"></Image>
+
+                <Button Grid.Row="3" VerticalOptions="Center" Text="На главную страницу" TextColor="White" BackgroundColor="#9378FF" CornerRadius="30" Margin="35,50,35,0" >
+                </Button>
+
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PsychoTestApp.Views.TestInfo">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddItemCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="Начать тест?" HorizontalTextAlignment="Center" TextColor="Black" FontSize="24" Margin="0,50,0,50">
+                    </Label>
+
+                    <Label Grid.Row="1" Margin="35,0,20,10" Text="Отвечайте быстро, 16-факторный тест Кеттелла не раздумывая над ответами" HorizontalTextAlignment="Start" TextColor="#979797" FontSize="18">
+                    </Label>
+
+                    <Label Grid.Row="2" Margin="35,0,20,10" Text="Давайте наиболее искренние ответы" HorizontalTextAlignment="Start" TextColor="#979797" FontSize="18">
+                    </Label>
+
+                    <Label Grid.Row="3" Margin="35,0,20,10" Text="Старайтесь как можно реже давать «средние» варианты («Не уверен», «Иногда», «Не знаю» и т.д.). Даже если вам не нравятся два других ответа, постарайтесь выбрать тот, что все же ближе, чем другой" HorizontalTextAlignment="Start" TextColor="#979797" FontSize="18">
+                    </Label>
+
+                    <Button Grid.Row="4" VerticalOptions="Center" Clicked="OnQuestionClicked" Text="Начать тест" TextColor="White" BackgroundColor="#9378FF" CornerRadius="30" Margin="35,50,35,0">
+                    </Button>
+
+
+            </Grid>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

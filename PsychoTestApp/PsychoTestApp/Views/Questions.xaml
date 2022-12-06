@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PsychoTestApp.Views.Questions">
+    <ContentPage.Content>
+        
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Text="1/187" HorizontalTextAlignment="Center" TextColor="#979797" FontSize="20" Margin="0,30,0,20">
+                    </Label>
+                <Frame Grid.Row="1" BackgroundColor="#9378FF" Margin="0,20,0,40">
+                <Label Text="Я предпочел бы иметь дачу…" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" Margin="0,20,0,20">
+                    </Label>
+                </Frame>
+
+                <RadioButton Grid.Row="2" Content="В оживленном поселке" Margin="35,0,20,10" TextColor="#979797" FontSize="18"/>
+
+                <RadioButton Grid.Row="3" Content="Нечто среднее" Margin="35,0,20,10" TextColor="#979797" FontSize="18"/>
+
+                <RadioButton Grid.Row="4" Content="В уединении, в лесу" Margin="35,0,20,10" TextColor="#979797" FontSize="18" />
+
+
+                <Button Grid.Row="5" VerticalOptions="Center" Text="Далее" Clicked="OnStartClicked" TextColor="White" BackgroundColor="#9378FF" CornerRadius="30" Margin="35,50,35,0" >
+                    </Button>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
